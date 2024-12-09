@@ -7,6 +7,9 @@ Float
     Password: password
 
 
+#    CTF PAGE
+    [CTF Page] http://networking-ctfd-1.server.vta:8000/user
+
 #    Q: What the hell is a float? 
 #A:
 #    Q: How many points to pass? Bare ass miniumum.
