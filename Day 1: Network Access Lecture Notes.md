@@ -145,10 +145,15 @@
     Protect
     Restrict
 
-
-
-
-
+    Port Security coan help to...
+        Restrict Unauthorizecd access 
+        Limit MAC address learned on port 
+        Prevnet CAM table overflow attacks
+    Vulnerabilities
+        Dependant on MAC address
+        MAC spoofing
+        
+### No longer taking Notes, way too much shit. 
 
 
 
