@@ -8,7 +8,7 @@ Float
 
 
 #Q: What the hell is a float? 
-#A:
+    #A:
 #Q: How many points to pass? Bare ass miniumum.
  #   A: 1770 points
 #Q: What OS is relavant?
