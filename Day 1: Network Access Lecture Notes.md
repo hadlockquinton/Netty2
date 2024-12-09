@@ -70,6 +70,13 @@
     | 100 Gbps 	| 0.1ns		|
 
 
+#    Mac Address
+    Parts : OUI; First 3 byts assigned by IANA
+            Vendor Assigned: Assigned by the vendor
+    You can spoof MAC addresses with Software
+
+
+
 
 
 
