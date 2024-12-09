@@ -1,8 +1,8 @@
 # Formatting 
-#### Question: 
-##### Command(s) used:
-##### Takeaway: 
-
+### Question: 
+### Command(s) used:
+    kys
+### Takeaway:  
 # CTF
 
 
