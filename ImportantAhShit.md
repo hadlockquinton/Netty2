@@ -11,7 +11,5 @@ Float
 #A:
 #    Q: How many points to pass? Bare ass miniumum.
 #A: 1770 points
-#Q: What OS is relavant?
-#    A: Linux Kung FU! 
-Q:
-    A:
+#    Q: What OS is relavant?
+#A: Linux Kung FU! 
