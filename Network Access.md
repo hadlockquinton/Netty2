@@ -63,7 +63,7 @@
     Bit Time - is the period of time is required for a bit to be placed and sensed on the media. Network speeds are measured by how many bits can be placed or sensed on the media in 1 second. Each increase in speed requires more bits to be sent during the same 1 second internal. To accomplish this the bit-times are reduced.
     | Speed | Bit-time |
     |---------------|------------------|
-    | 10 Mbps	|	100ns 	|
+    | 10 Mbps	| 100ns	|
 	
 
 100ns
