@@ -154,7 +154,8 @@
         MAC spoofing
         
 ##### No longer taking Notes, way too much shit. 
-
+<h5> Q: Is there a lot of information? </h5>
+<h6> a: yEs, wTf dO yOu tHiNk tHeRe iS?</h6>
 
 
 
