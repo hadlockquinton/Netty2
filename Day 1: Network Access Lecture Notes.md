@@ -75,13 +75,40 @@
             Vendor Assigned: Assigned by the vendor
     You can spoof MAC addresses with Software
 
+#    VLAN types
+    Default: VLAN
+    Data: User Traffic
+    Voice: VOIP
+    Management: Switch and Router management
+    Native: Untagged switch and Router Traffic
+    
+#    VLAN hopping attack
+    Switch spooging(DTP)
+    Single Tagging
+    Double tagging
+
+# Arp
+    Address Resolution Protocol
+        Types: ARP(OP 1 and OP 2)
+               RARP (OP 3 and OP 4)
+               Proxy ARP(OP 2)
+               Gratuitous ARP(OP 2)
+               
+    ARP CACHE : All Resolved MAC to IP resolutions
+                if MAC is not in CACHE, then ARP is used 
+                Dynamic entries last from 2-20 minutes
+                Default Gateways is present at minimum
+                can be easily duped by attackers
+
+    ARP POISONING ATTACK
+        MiTM by poisoning the arp cache with gratuitous arp or proxy arp
 
 
-
-
-
-
-
+# VTP   
+    VLAN trunking protocol: Dynamically move/remove/add/modify VLAN's
+    CISCO Proprietary
+        modes: Server, Client, and Transparent
+    
 
 
 
