@@ -64,29 +64,13 @@
     | Speed | Bit-time |
     |---------------|---------------|
     | 10 Mbps	| 100ns		|
-    | 100 Mbps	|	10ns	|
+    | 100 Mbps	| 10ns		|
+    | 1 Gbps	| 1ns		|
+    | 10 Gbps	| .1ns		|
+    | 100 Gbps 	| 0.1ns		|
 
-100ns
 
-100 Mbps
-	
 
-10ns
-
-1 Gbps
-	
-
-1ns
-
-10 Gbps
-	
-
-.1ns
-
-100 Gbps
-	
-
-.01ns
 
 
 
