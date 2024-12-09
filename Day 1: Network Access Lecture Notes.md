@@ -110,11 +110,40 @@
         modes: Server, Client, and Transparent
     Vulnerability:  Can cause switches to dump all VLAN information
                     Cause a DoS as switch will not support configured VLAN's
-#DTP
+# DTP
+    Dynamic Trunking Protocol: Used to dynamically create trunks 
+    Vulnerability: ON by default, can send crafted messages to form VLAN trunk link.
+    Recommended to disable DTP negotiations and manually assign access or trunk
 
 
-
-
+# CDP, FDP AND LLDP
+    Vulnerabilities
+        Leaks valuable information
+        clear text
+        Enabled by default
+        disable it
+            Globably 
+            per instance
+        May require it for VOIP
+# STP (Spanning Tree Protocol)
+    Root Decision Process
+        1. Elect Root Bridge 
+        2. Identify the root port on the non-root bridge
+        3, Indetify the designated port for each segment
+        4. set the alternate ports to blocking state
+    Types:
+        802.1D STP
+        Per VLAN ST+ (PVST+)
+        (RSTP)
+        (RPSTP+)
+        802.1s (Mulitple Spanning Tree)
+    Attack:
+        Crafted bridge protocol data units (BPDU)
+        Used to preform a DoS or MitM
+# Port Security Modes
+    Shutdown(default)
+    Protect
+    Restrict
 
 
 
