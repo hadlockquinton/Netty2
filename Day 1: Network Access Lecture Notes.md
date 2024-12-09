@@ -108,7 +108,9 @@
     VLAN trunking protocol: Dynamically move/remove/add/modify VLAN's
     CISCO Proprietary
         modes: Server, Client, and Transparent
-    
+    Vulnerability:  Can cause switches to dump all VLAN information
+                    Cause a DoS as switch will not support configured VLAN's
+#DTP
 
 
 
