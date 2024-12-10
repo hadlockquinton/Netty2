@@ -31,7 +31,20 @@
 | Filter for all TCP syn packets | tcp[13] = 0x02        |
 | Filter for all TCP syn/ack packets | tcp[13] = 0x12        |
 | Filter for Rst packets | tcp[13] = 0x04        |
-| 
+| Filter for dst ports in the well known range | tcp[2:2] < 1024 \|\| udp[2:2] < 1024        |
+| Filter for all http traffic | tcp[0:2] = 80 \|\| tcp[2:2] = 80        |
+| Filter for all telnet traffic | tcp[0:2] = 23 \|\| tcp[2:2] = 23        |
+| Filter for all Arp traffic | arp        |
+| Filter for all arp(efficiently I guess) | ether[12:2] = 0x0806        |
+| Filter for the Evil/Reserved bit set | ip[6] & 0x80 = 0x80        |
+| Filter for Chaos Protocol | ip[9] = 0x10        |
+| Filter for DSCP field of 37 | ip[1] >>2 = 37        |
+| Filter for Urg bit not set and Urg pointer with a value | tcp[18:2] != 0 && tcp[13] & 0x20 = 0        |
+| Filter for Dst Ip of 10.10.10.10 and null scan(No bits set) | tcp[13] = 0 && ip[16:4] = 0x0a0a0a0a        |
+| Filter for VLAN hopping from 1 to 10 | ether[12:4]&0xffff0fff = 0x81000001 && ether[16:4]&0xffff0fff = 0x8100000A        |
+
+
+
 
 
 
