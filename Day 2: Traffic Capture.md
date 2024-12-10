@@ -90,9 +90,6 @@
       p0f -r wget.pcap -o /var/log/p0f.log
       cat /var/log/p0f.log | grep ""
         
-      
-
-
 
 
 
