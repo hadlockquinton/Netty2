@@ -3,6 +3,8 @@
 ##### NoteyNotes
         AXFR : Zone transfer
         ftp-data : finds the data that is used in ftp, I guess. thank you thomas
+        tcp.port eq 443 and ip contains "http" : gives all the ssl bullshit
+        server of SNMP : It will be the system doing the get-request
         
 
 # Traffic Captures
