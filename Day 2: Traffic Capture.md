@@ -6,12 +6,34 @@
         tcp.port eq 443 and ip contains "http" : gives all the ssl bullshit
         server of SNMP : It will be the system doing the get-request
 
+
+#### 
+        tcpdump {A} [B:C] {D} {E} {F} {G}
+        A = Protocol ( ether | arp | ip | ip6 | icmp | tcp | udp )
+        B = Header Byte number
+        C = optional: Byte Length. Can be 1, 2 or 4 (default 1)
+        D = optional: Bitwise mask (&)
+        E = Relational operator ( = | == | > | < | <= | >= | != | () | << | >> )
+        F = Result of Expression
+        G = optional: Logical Operator (&& ||) to bridge expressions
+
 # Berkley Packet Filters, CTF answers 
 | Question | Answer        |
 | ----------| ----------        |
 | Filter ipv4 and at least the don't fragment bit set | ip[6] & 0x40 = 0x40        |
 | Filter ipv4 and ipv6 with ttl's of 64 or less | 'ip[8] <= 64 \|\| ip6[7] <= 64'        |
 | Filter srcprt higher than 1024 | tcp[0:2] > 1024 \|\| udp[0:2] > 1024        |
+| Filter for ipv4 and ipv6 with UDP as the next protocol | ip[9] =0x11 \|\| ip6[6] = 0x11        |
+| Filter for ack/rst or ack/fin flags set in tcp | tcp[13] = 0x14 \|\| tcp[13] = 0x11        |
+| Filter for ipv4 ID field of 213 | ip[4:2] = 0xd5        |
+| Filter for Ethernet Vlan Tag | ether[12:2] = 0x8100        |
+| Filter for all DNS packets | udp[0:2] = 53 \|\| udp[2:2] = 53 \|\| tcp[0:2] = 53 \|\| tcp[2:2] = 53        |
+| Filter for all TCP syn packets | tcp[13] = 0x02        |
+| Filter for all TCP syn/ack packets | tcp[13] = 0x12        |
+| Filter for Rst packets | tcp[13] = 0x04        |
+| 
+
+
 
         
 
