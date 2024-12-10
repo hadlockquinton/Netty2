@@ -5,6 +5,14 @@
         ftp-data : finds the data that is used in ftp, I guess. thank you thomas
         tcp.port eq 443 and ip contains "http" : gives all the ssl bullshit
         server of SNMP : It will be the system doing the get-request
+
+# Berkley Packet Filters, CTF answers 
+| Question | Answer        |
+| ----------| ----------        |
+| Filter ipv4 and at least the don't fragment bit set | ip[6] & 0x40 = 0x40        |
+| Filter ipv4 and ipv6 with ttl's of 64 or less | 'ip[8] <= 64 \|\| ip6[7] <= 64'        |
+| Filter srcprt higher than 1024 | tcp[0:2] > 1024 \|\| udp[0:2] > 1024        |
+
         
 
 # Traffic Captures
