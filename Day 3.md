@@ -1,7 +1,7 @@
 
 # Notes
-  ss -ntlp - Lists all the tcp sockets
-  ss -nulp - lists all the udp sockets
+    ss -ntlp - Lists all the tcp sockets
+    ss -nulp - lists all the udp sockets
   
 
 # Sockets
