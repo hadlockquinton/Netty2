@@ -1,3 +1,9 @@
+
+# Notes
+  ss -ntlp - Lists all the tcp sockets
+  ss -nulp - lists all the udp sockets
+  
+
 # Sockets
 
   **Stream** Sockets - Connection oriented and sequenced; methods for connection establishment and tear-down. Used with TCP, SCTP, and Bluetooth.
