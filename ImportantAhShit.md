@@ -8,7 +8,10 @@ Float
 
 
 #    CTF PAGE
-[CTF Page] http://networking-ctfd-1.server.vta:8000/user
+
+# [CTF Page] http://networking-ctfd-1.server.vta:8000/user
+# [Network Page] https://git.cybbh.space/CCTC/students
+
 
 #    Q: What the hell is a float? 
 #A:
