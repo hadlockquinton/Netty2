@@ -28,6 +28,16 @@ Protocol Analysis... Easy as shit my boy.
 | Filter for Dst Ip of 10.10.10.10 and null scan(No bits set) | tcp[13] = 0 && ip[16:4] = 0x0a0a0a0a        |
 | Filter for VLAN hopping from 1 to 10 | ether[12:4]&0xffff0fff = 0x81000001 && ether[16:4]&0xffff0fff = 0x8100000A        |
 
-
+# Day 3 
+| Question | Answer  |
+| ---------- | ----------  |
+| 3 Address Families associated with the python3 socket module? | socket.AF_INET, socket.AF_INET6, socket.AF_UNIX  |
+| Socket Functions to open and close a connection | socket.connect(), socket.close()  |
+| What library is used to combine various peices of the packet into network order? | struct.pack  |
+| What must be created for the raw socket that stream and datagram sockets create for you? | Header  |
+| within the socket module allows you to Send data to a socket, while not already being connected to a remote socket? | socket.sendto()  |
+| two required items needed to be set in order to send a Datagram or Stream socket | ipaddr port  |
+| what must a string be converted to before being sent due to encoding? | bytes-like object  |
+| 
 
 
