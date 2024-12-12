@@ -1,4 +1,5 @@
-
+# Ports 
+# 20-23, 80
 # Recon
     Passive External 
     Active External
@@ -82,6 +83,30 @@
     Strobe scan : Scan a predefined subset of ports on range of targets
     Block Scan : Scan all ports or a range of ports of targets 
     
+# NMAP DEFAULTS 
+    USER: TCP full scan, -sT
+    ROOT: TCP syn scan -sS
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
