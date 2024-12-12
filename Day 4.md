@@ -92,9 +92,9 @@
 
 # commands
     
+wget -r http:/ip
 
-
-
+curl http://ip
 
 
 
