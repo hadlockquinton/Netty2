@@ -1,5 +1,5 @@
 # mknod
-
+# steghide extract -sf 
 
 
 # File Transfer methods 
