@@ -1,15 +1,5 @@
 # mknod
 
-# 
-
-
-
-
-
-
-
-
-
 
 
 # File Transfer methods 
@@ -47,8 +37,8 @@
         transport 22
         uses symetric and asymetric encryption
         
-[FTP](https://github.com/user-attachments/assets/ada2309a-4eca-4023-9f60-a927a956efad)
-[FTP](https://github.com/user-attachments/assets/9dfee368-0537-41cb-adc4-d65fa361457e)
+![FTP](https://github.com/user-attachments/assets/ada2309a-4eca-4023-9f60-a927a956efad)
+![FTP](https://github.com/user-attachments/assets/9dfee368-0537-41cb-adc4-d65fa361457e)
 
 
     Netcat - swiss army hoe
