@@ -1,10 +1,24 @@
+# mknod
+
+# 
+
+
+
+
+
+
+
+
+
+
+
 # File Transfer methods 
     scp
         uses port 22 for transport 
         uses asymmetric and symmetric encryption
         non interactive 
-OPTIONS
-    . - present working directory 
+    OPTIONS
+     . - present working directory 
     -v - verbose method
     -P - alternate port
     -r - recursively copies the whole directory
@@ -33,15 +47,21 @@ OPTIONS
         transport 22
         uses symetric and asymetric encryption
         
+[FTP](https://github.com/user-attachments/assets/ada2309a-4eca-4023-9f60-a927a956efad)
+[FTP](https://github.com/user-attachments/assets/9dfee368-0537-41cb-adc4-d65fa361457e)
 
 
-![image](https://github.com/user-attachments/assets/ada2309a-4eca-4023-9f60-a927a956efad)
-![image](https://github.com/user-attachments/assets/9dfee368-0537-41cb-adc4-d65fa361457e)
+    Netcat - swiss army hoe
+        can be used for tcp/udp inbound and outbound connections
 
+        
+<h5> Listener (receive file): <h5>
+    
+     nc -lvp 9001 > newfile.txt
 
+<h5>Client (sends file): </h5>  
 
-
-
+     nc 172.16.82.106 9001 < file.txt
 
 
 
