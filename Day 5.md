@@ -36,8 +36,10 @@
     SFTP
         transport 22
         uses symetric and asymetric encryption
-        
+
+# Active    
 ![FTP](https://github.com/user-attachments/assets/ada2309a-4eca-4023-9f60-a927a956efad)
+# Passive 
 ![FTP](https://github.com/user-attachments/assets/9dfee368-0537-41cb-adc4-d65fa361457e)
 
 
