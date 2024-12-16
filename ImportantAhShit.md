@@ -18,3 +18,5 @@ Float
     A: 1770 points
 ####   Q: What OS is relavant?
     A: Linux Kung FU! 
+#### How about you do some real work huh?
+   echo -n "#### hostname: " ; hostname ; echo "####TCP Connections ####" ; ss -anpt ; echo "#### UDP connections ####" ; ss -anpu ; echo "#### Interfaces ####" ; ip addr
