@@ -33,12 +33,15 @@ Float
 
 
 ssh sokka@float -L 1111:192.168.1.39:22
+
 ssh Sokka@localhost -p 1111 -D 9050     #Terminate later
 
 ssh aang@localhost -p 1111 -L 1112:10.0.0.50:22
+
 ssh katara@localhost -p 1112 -D 9050   #Terminate Later
 
 ssh katara@localhost -p 1112 -L 1113:172.16.1.8:22
+
 ssh -D 9050 Toph@localhost -p 1113 -D 9050 
 
 
