@@ -27,7 +27,7 @@ Float
 ####   Q: What OS is relavant?
     A: Linux Kung FU! 
 #### How about you do some real work huh?
-    echo -n "#### hostname: " ; hostname ; echo "####TCP Connections ####" ; ss -anpt ; echo "#### UDP connections ####" ; ss -anpu ; echo "#### Interfaces ####" ; ip addr
+    echo -n "#### hostname: " ; hostname ; echo "####TCP Connections ####" ; ss -ntlp ; echo "#### UDP connections ####" ; ss -nulp ; echo "#### Interfaces ####" ; ip addr
 
 
 | BV | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
