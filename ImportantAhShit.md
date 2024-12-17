@@ -2,7 +2,8 @@
 
 # local localost: From the perspective of the ssh
 
-
+# Ping sweep    
+    for i in {1..254}; do (ping -c 1 192.168.65.$i | grep "bytes from" &) ; done
 
 
 Float
