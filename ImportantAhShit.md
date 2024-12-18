@@ -68,11 +68,8 @@ Float
         Test: ssh Jerry@localhost -p 4444
 
     ssh Jerry@localhost -p 4444 -L 5555:BethFloat:22
-        Test: ssh Beth@localhost -p 5555
-
-    ssh Beth@localhost -p 5555 -L 6666:127.0.0.1:54321
-    ssh Beth@localhost -p 5555 -D 9050
-    proxychains nc 127.0.0.1 54321
+        Test: ssh Beth@localhost -p 5555 -D 9050
+        proxychains nc localhost 54321
 
 
 
