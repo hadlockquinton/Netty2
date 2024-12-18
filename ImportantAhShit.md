@@ -54,12 +54,20 @@ ssh -D 9050 Toph@localhost -p 1113 -D 9050
 
 
 
+## Tunneling day 2
+    10.50.24.223
+    telnet Rick 23
+        ssh IH@Float IP -R 1111:localhost:22
+        ssh Rick@localhost -p 1111
+        
+    ssh Rick@localhost -p 1111 -L 3333:MortyFloat:2222
+        ssh Morty@localhost -p 3333
 
+    ssh Morty@localhost -p 3333 -L 4444:JerryFLoat:2323
+        ssh Jerry@localhost
 
-
-
-
-
+    ssh Jerry@localhost -p 4444 -L 5555:BethFloat:22
+        ssh Beth@localhost -p 5555
 
 
 
