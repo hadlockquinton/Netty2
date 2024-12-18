@@ -64,7 +64,7 @@ ssh -D 9050 Toph@localhost -p 1113 -D 9050
         ssh Morty@localhost -p 3333
 
     ssh Morty@localhost -p 3333 -L 4444:JerryFLoat:2323
-        ssh Jerry@localhost
+        ssh Jerry@localhost -p 4444
 
     ssh Jerry@localhost -p 4444 -L 5555:BethFloat:22
         ssh Beth@localhost -p 5555
