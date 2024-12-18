@@ -39,18 +39,19 @@ Float
 | Class D | /25 | /26 | /27 | /28 | /29 | /30 | /31 | /32 |
 
 
+## Tunneling day 1
 
-ssh sokka@float -L 1111:192.168.1.39:22
+    ssh sokka@float -L 1111:192.168.1.39:22
 
-ssh Sokka@localhost -p 1111 -D 9050     #Terminate later
+    ssh Sokka@localhost -p 1111 -D 9050     #Terminate later
 
-ssh aang@localhost -p 1111 -L 1112:10.0.0.50:22
+    ssh aang@localhost -p 1111 -L 1112:10.0.0.50:22
 
-ssh katara@localhost -p 1112 -D 9050   #Terminate Later
+    ssh katara@localhost -p 1112 -D 9050   #Terminate Later
 
-ssh katara@localhost -p 1112 -L 1113:172.16.1.8:22
+    ssh katara@localhost -p 1112 -L 1113:172.16.1.8:22
 
-ssh -D 9050 Toph@localhost -p 1113 -D 9050 
+    ssh -D 9050 Toph@localhost -p 1113 -D 9050 
 
 
 
@@ -69,7 +70,9 @@ ssh -D 9050 Toph@localhost -p 1113 -D 9050
     ssh Jerry@localhost -p 4444 -L 5555:BethFloat:22
         ssh Beth@localhost -p 5555
 
-
+    ssh Beth@localhost -p 5555 -L 6666:127.0.0.1:54321
+    ssh Beth@localhost -p 5555 -D 9050
+    proxychains nc 127.0.0.1 54321
 
 
 
