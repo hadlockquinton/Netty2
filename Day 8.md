@@ -64,10 +64,19 @@
     icmp [ type | code { type# | code# } ]
     
 
-
-
-
-
+    nft { list | flush } ruleset
+    nft { delete | list | flush } table [family] [table]
+    nft { delete | list | flush } chain [family] [table] [chain]    
+    List table with handle numbers    
+    nft list table [family] [table] [-a]    
+    Adds after position    
+    nft add rule [family] [table] [chain] [position <position>] [matches] [statement]   
+    Inserts before position   
+    nft insert rule [family] [table] [chain] [position <position>] [matches] [statement]   
+    Replaces rule at handle    
+    nft replace rule [family] [table] [chain] [handle <handle>] [matches] [statement]    
+    Deletes rule at handle  
+    nft delete rule [family] [table] [chain] [handle <handle>]
 
 
 
