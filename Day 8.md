@@ -39,8 +39,48 @@
     -m bpf --bytecode [ 'bytecode' ]
     -m iprange [ --src-range | --dst-range { ip1-ip2 } ]
     
+        Flush table
+    iptables -t [table] -F
+    Change default policy
+    iptables -t [table] -P [chain] [action]
+    Lists rules with rule numbers
+    iptables -t [table] -L --line-numbers
+    Lists rules as commands interpreted by the system
+    iptables -t [table] -S
+
+
+
+# NFT Table
+
+    nft add table [family] [table]
+    nft add chain [family] [table] [chain] { type [type] hook [hook] priority [priority] \; policy [policy] \;}
+    nft add rule [family] [table] [chain] [matches (matches)] [statement]
+
     
+    ip [ saddr | daddr { ip | ip1-ip2 | ip/CIDR | ip1, ip2, ip3 } ]
+    tcp flags { syn, ack, psh, rst, fin }
+    tcp [ sport | dport { port1 | port1-port2 | port1, port2, port3 } ]
+    udp [ sport| dport { port1 | port1-port2 | port1, port2, port3 } ]
+    icmp [ type | code { type# | code# } ]
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
