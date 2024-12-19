@@ -66,7 +66,9 @@
 
     nft { list | flush } ruleset
     nft { delete | list | flush } table [family] [table]
-    nft { delete | list | flush } chain [family] [table] [chain]    
+    nft { delete | list | flush } chain [family] [table] [chain] 
+
+    
     List table with handle numbers    
     nft list table [family] [table] [-a]    
     Adds after position    
