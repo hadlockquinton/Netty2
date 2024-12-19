@@ -72,7 +72,19 @@ Float
         proxychains nc localhost 54321
 
 
+# Tunneling day 3
+    10.50.20.10
 
+    ssh Bender@:10.50.20.10 -p 1234 -L 1111:172.17.17.28:23
+    telnet localhost 1111
+    ssh Bender@172.17.17.17 -p 1234 -R 2222:localhost:4321
+    ssh Bender@10.50.20.10 -p 1234 -L 3333:localhost:2222
+        ssh Philip@localhost -p 3333 -D 9050
+    ssh Philip@localhost -p 3333 -L 4444:192.168.30.150:1212
+        ssh Leela@localhost -p 44444
+    ssh Leela@localhost -p 4444 -L 5555:10.10.12.121:2932
+        ssh Professor@localhost -p 5555 -D 9050
+    
 
 
 
