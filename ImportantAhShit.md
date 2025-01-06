@@ -87,5 +87,36 @@ Float
 
 # Tunelling day 4
     telnet float 23
-    ssh 
+        ssh student@10.50.32.232 -R 1001:localhost:22
+    ssh Eric@localhost -p 1001 -L 1002:192.168.100.60:22
+    ssh Kenny@localhost -p 1002 -L 1003:10.90.50.140:6481
+    ssh Kyle@localhost -p 1003 -L 1004:172.20.21.5:23
+    ssh Stan@localhost -p 1004
+        ssh Kyle@172.20.21.4 -R 1005:localhost:22
+    ssh Kyle@localhost -p 1003 -L 1006:localhost:1005
+    ssh Stan@localhost -p 1006
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
