@@ -99,12 +99,12 @@ Float
 # Tunneling Day 5
     ssh Sterling@floatip -L 1000:10.1.2.200:23 
     telnet localhost 1000
-        ssh Sterling@10.1.2.130 -R 1001:localhost:8976
-    ssh sterling@floatip -L 1002:localhost:1001
+        ssh Sterling@10.1.2.130 -R 2000:localhost:8976
+    ssh sterling@floatip -L 1002:localhost:2000
     ssh Lana@localhost -p 1002 -L 1003:10.2.5.20:22
     ssh Cheryl@localhost -p 1003 -L 1004:10.3.9.39:23 
     telnet localhost 1004
-        ssh Cheryl@10.3.9.33 -R 2000:localhost:3597
+        ssh Cheryl@10.3.9.33 -R 2001:localhost:3597
     ssh Cheryl@localhost -p 1003 -L 1005:localhost:2000
     ssh Malory@localhost -p 1005
 
