@@ -109,7 +109,16 @@ Float
     ssh Malory@localhost -p 1005
 
 
-
+# Mental Gymnastics
+    ME: telnet 11.1.1.11 
+    P1: ssh Me@10.1.0.2 -R 2000:localhost:9999
+    ME: ssh P1@localhost -p 2000 -L 1000:22.2.2.22:23
+    ME: telnet localhost 1000
+    P2: ssh P1@11.1.1.11 -R 2001:localhost:8888
+    ME: ssh P1@11.1.1.11 -p 2000 -L 1001:localhost:2001
+    ME: ssh P2@11.1.1.11 -p 1001 -L 1002:33.3.3.33:7777
+    ME: ssh TGT@localhost -p 1002 -D 9050 -NT
+    ME: proxychains
 
 
 
